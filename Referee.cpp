@@ -9,8 +9,7 @@
             return player1;
         }
         else {
-            player1->isTie = true;
-            return player1;
+            return nullptr;
         }
      }
               
