@@ -3,6 +3,8 @@
         
         char Human::makeMove(char move){
             Human::moveChoice = move;
+            cout << 'human move:' << endl;
+            cout << move << endl;
             return move;
         }
 

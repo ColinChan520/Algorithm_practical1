@@ -3,6 +3,7 @@
 
 #include <string>
 #include "Player.h"
+#include <iostream>
 
 class Computer : public Player{
     public:

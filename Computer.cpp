@@ -3,6 +3,7 @@
 
         char Computer::makeMove(){
             Computer::moveChoice = 'R';
+            cout << 'computer move' << endl;
             return Computer::moveChoice;
         }
 
