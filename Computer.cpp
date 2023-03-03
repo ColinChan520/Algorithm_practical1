@@ -1,14 +1,7 @@
 #include "Computer.h"
-#include <string>
 
         char Computer::makeMove(){
-            Computer::moveChoice = 'R';
-            cout << 'computer move' << endl;
-            return Computer::moveChoice;
-        }
-
-        char Computer::getMove(){
-            return Computer::moveChoice;
+            return 'R';
         }
 
         string  Computer::getName(){

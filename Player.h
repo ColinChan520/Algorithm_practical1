@@ -7,10 +7,9 @@ using namespace std;
 class Player{
     public:
         
-        bool isTie = false;
-        
         virtual string getName() = 0;
-        virtual char getMove() = 0;
+        virtual char makeMove() = 0;
+
 };
 
 #endif

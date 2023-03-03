@@ -1,15 +1,10 @@
 #include "Human.h"
-#include <string>
         
-        char Human::makeMove(char move){
-            Human::moveChoice = move;
-            cout << 'human move:' << endl;
-            cout << move << endl;
+        char Human::makeMove(){
+            cout << "Enter move:" << endl;
+            char move;
+            cin >> move;
             return move;
-        }
-
-        char Human::getMove(){
-            return Human::moveChoice;
         }
         
         string Human::setName(string name){

@@ -1,22 +1,18 @@
 #ifndef HUMAN_H
 #define HUMAN_H
 
+#include <iostream>
 #include <string>
 #include "Player.h"
-#include <iostream>
 
 class Human : public Player{
     public:
-        char moveChoice;
         std::string nameOfHuman = "Human";
         
-        char makeMove(char move);
-        char getMove();
+        char makeMove();
         
         std::string setName(string name);
         std::string getName();
-
-        bool isTie = false;
 
 };
 

@@ -1,28 +1,26 @@
 #include <iostream>
 #include "Referee.h"
 
-    Player* Referee::refGame(Player*player1, Player*player2){   
-        cout << 'players:' << endl;
-        cout << player1->getName() << endl;
-        cout << player2->getName() << endl;
-        cout << 'players:' << endl;
-        cout << player1->getMove() << endl;
-        cout << player2->getMove() << endl;
+    Player* Referee::refGame(Player*player1, Player*player2){  
+        
+        char player1move = player1->makeMove();
+        char player2move = player2->makeMove();
 
-        if (player1->getMove() == 'S' && player2->getMove() == 'R'){
-            return player2;
-        }
-        else if (player1->getMove() == 'R' && player2->getMove() == 'S'){
+        if(player1move == 'R' && player2move == 'S'){
             return player1;
         }
-        else if (player1->getMove() == 'P' && player2->getMove() == 'R'){
-            return player1;
-        }
-        else if (player1->getMove() == 'R' && player2->getMove() == 'P'){
+        else if(player1move == 'R' && player2move == 'P'){
             return player2;
         }
-        else {
+        else if(player1move == 'S' && player2move == 'R'){
+            return player2;
+        }
+        else if(player1move == 'P' && player2move == 'R'){
+            return player1;
+        }
+        else{
             return nullptr;
         }
+  
      }
               
